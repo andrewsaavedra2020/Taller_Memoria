@@ -1,0 +1,68 @@
+\documentclass{article}
+\usepackage[utf8]{inputenc}
+\usepackage[spanish]{babel}
+\usepackage{listings}
+\usepackage{graphicx}
+\graphicspath{ {images/} }
+\usepackage{cite}
+
+\begin{document}
+\begin{titlepage}
+    \begin{center}
+        \vspace*{1cm}
+            
+        \Huge
+        \textbf{Taller - Nociones de la memoria del computador}
+            
+        \vspace{0.5cm}
+        \LARGE
+        Taller de investigacion
+            
+        \vspace{1.5cm}
+            
+        \textbf{Andrew Saavedra Martinez}
+            
+        \vfill
+            
+        \vspace{0.8cm}
+            
+        \Large
+        Despartamento de Ingeniería Electrónica y Telecomunicaciones\\
+        Universidad de Antioquia\\
+        Medellín\\
+        Septiembre de 2020
+            
+    \end{center}
+\end{titlepage}
+
+\tableofcontents
+\newpage
+\section{Definicion de la memoria de un computador}\label{intro}
+Se define la memoria del computador como el dispositivo donde se almacena temporalmente toda la información con la que trabajan los microprocesadores para procesarla y devolver los resultados que los usuarios requieren.\cite{youbioit.com}
+
+\section{Tipos de memoria} \label{contenido}
+Algunos de los tipos de memoria utilizados en un computador son:
+\subsection{Memoria caché}
+Es un tipo de memoria específica que está preparada para servir de apoyo al procesador, y que es capaz de trabajar a velocidades muy elevadas. Esta memoria se divide en diferentes niveles, (L1, L2, L3) los cuales se encuentran dentro de los mismos núcleos del microprocesador.\cite{stallings2006organizacion}
+
+\subsection{Memoria RAM}
+Es el tipo de memoria más importante del computador, su nombre representa las siglas de Random Access Memory (Memoria de Acceso Aleatorio); está dividida en celdas de memoria donde se almacenan cada uno de los bits o pulsos eléctricos (que representan los 1 y 0) y a las cuales se puede acceder directamente indistintamente de su posición o dirección.\cite{rebollo2011memoria}
+\subsection{Disco duro}
+El disco duro es el dispositivo encargado de almacenar todos los programas y datos de una computadora. A diferencia de la memoria RAM, es capaz de guardar el contenido incluso cuando el equipo se encuentra apagado.\cite{stallings2006organizacion}
+\section{Gestion de la memoria de un computador} \label{contenido}
+La memoria en un computador se gestiona a través de un microcontrolador, el cual se encarga de comunicar las instrucciones del microprocesador, interviniendo en cada transferencia de información de y hacia la memoria, y estableciendo el ritmo o "velocidad" con que se realizan las operaciones.  
+
+La memoria  a su vez se encuentra conectada con su controlador a través del bus, una serie de pistas de cobre (que actúan como cables) impresas en la placa madre, por las cuales se transporta la información. Además de servir de vía para transportar la información el bus establece la frecuencia o ritmo de trabajo en la que se comunican ambos dispositivos.\cite{youbioit.com}
+
+
+\section{¿Qué hace que una memoria sea más rápida que otra? ¿Por qué esto es importante? 
+} \label{contenido}
+%
+La diferencia de la rapidez entre una memoria y otra radica en la frecuencia y la latencia que estas manejen. La frecuencia me indica la cantidad de ciclos por segundos a los cuales puede transmitir información la memoria. Cuanta mayor sea la frecuencia, mayor será la rapidez .Cabe recalcar que la velocidad de los módulos de memoria depende de la velocidad del bus, o sea las pistas del circuito impreso de la placa madre por la que viaja la información de un dispositivo a otro, y más concretamente de la velocidad del reloj del bus que une la memoria con el microprocesador. La latencia por su parte mide la cantidad de tiempo que se tarda en obtener de la memoria cada bit de información, o sea el tiempo que pasa desde que el controlador de memoria pide en nombre del microprocesador una serie de datos y dichos datos son obtenidos., entre menor sea este valor mayor será la velocidad de transferencia de los datos.\cite{youbioit.com}
+
+Es importante reconocer la diferencia de velocidades entre los distintos tipos de memoria ya que una mayor velocidad permite realizar transferencias en menos tiempo, de este modo el almacenamiento de datos se completará más rápidamente, marcando una diferencia importante en el rendimiento del computador.
+\newpage
+\bibliographystyle{IEEEtran}
+\bibliography{references}
+
+\end{document}
